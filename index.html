@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Golf Mathematique</title>
+  </head>
+  <body>
+    <h2>Lets Play Golf</h2>
+    <button id="start" onclick="start()">Demarer le jeux</button>
+    <br />
+    <br />
+    <div id="message"></div>
+
+    <div id="grilles">
+      <input type="button" value="" id="case0-0" class="case" name="" />
+      <input type="button" value="" id="case0-1" class="case" name="" />
+      <input type="button" value="" id="case0-2" class="case" name="" />
+      <input type="button" value="" id="case0-3" class="case" name="" />
+      <input type="button" value="" id="case0-4" class="case" name="" />
+      <input type="button" value="" id="case0-5" class="case" name="" />
+      <input type="button" value="" id="case0-6" class="case" name="" />
+      <input type="button" value="" id="case0-7" class="case" name="" />
+      <input type="button" value="" id="case0-8" class="case" name="" />
+      <input type="button" value="" id="case0-9" class="case" name="" />
+      <input type="button" value="" id="case0-10" class="case" name="" />
+      <input type="button" value="" id="case0-11" class="case" name="" />
+      <input type="button" value="" id="case0-12" class="case" name="" />
+      <input type="button" value="" id="case0-13" class="case" name="" />
+      <input type="button" value="" id="case0-14" class="case" name="" />
+      <input type="button" value="" id="case0-15" class="case" name="" />
+      <input type="button" value="" id="case0-16" class="case" name="" />
+      <input type="button" value="" id="case0-17" class="case" name="" />
+      <input type="button" value="" id="case0-18" class="case" name="" />
+      <input type="button" value="" id="case0-19" class="case" name="" />
+      <br />
+      <input type="button" value="" id="case1-0" class="case" name="" />
+      <input type="button" value="" id="case1-1" class="case" name="" />
+      <input type="button" value="" id="case1-2" class="case" name="" />
+      <input type="button" value="" id="case1-3" class="case" name="" />
+      <input type="button" value="" id="case1-4" class="case" name="" />
+      <input type="button" value="" id="case1-5" class="case" name="" />
+      <input type="button" value="" id="case1-6" class="case" name="" />
+      <input type="button" value="" id="case1-7" class="case" name="" />
+      <input type="button" value="" id="case1-8" class="case" name="" />
+      <input type="button" value="" id="case1-9" class="case" name="" />
+      <input type="button" value="" id="case1-10" class="case" name="" />
+      <input type="button" value="" id="case1-11" class="case" name="" />
+      <input type="button" value="" id="case1-12" class="case" name="" />
+      <input type="button" value="" id="case1-13" class="case" name="" />
+      <input type="button" value="" id="case1-14" class="case" name="" />
+      <input type="button" value="" id="case1-15" class="case" name="" />
+      <input type="button" value="" id="case1-16" class="case" name="" />
+      <input type="button" value="" id="case1-17" class="case" name="" />
+      <input type="button" value="" id="case1-18" class="case" name="" />
+      <input type="button" value="" id="case1-19" class="case" name="" />
+      <br />
+      <input type="button" value="" id="case2-0" class="rouge" name="" />
+      <input type="button" value="" id="case2-1" class="rouge" name="" />
+      <input type="button" value="" id="case2-2" class="rouge" name="" />
+      <input type="button" value="" id="case2-3" class="case" name="" />
+      <input type="button" value="" id="case2-4" class="case" name="" />
+      <input type="button" value="" id="case2-5" class="case" name="" />
+      <input type="button" value="" id="case2-6" class="case" name="" />
+      <input type="button" value="" id="case2-7" class="case" name="" />
+      <input type="button" value="" id="case2-8" class="case" name="" />
+      <input type="button" value="" id="case2-9" class="case" name="" />
+      <input type="button" value="" id="case2-10" class="case" name="" />
+      <input type="button" value="" id="case2-11" class="case" name="" />
+      <input type="button" value="" id="case2-12" class="case" name="" />
+      <input type="button" value="" id="case2-13" class="case" name="" />
+      <input type="button" value="" id="case2-14" class="case" name="" />
+      <input type="button" value="" id="case2-15" class="case" name="" />
+      <input type="button" value="" id="case2-16" class="case" name="" />
+      <input type="button" value="" id="case2-17" class="case" name="" />
+      <input type="button" value="" id="case2-18" class="case" name="" />
+      <input type="button" value="" id="case2-19" class="case" name="" />
+      <br />
+      <input type="button" value="" id="case3-0" class="rouge" name="" />
+      <input type="button" value="" id="case3-1" class="rouge" name="" />
+      <input type="button" value="" id="case3-2" class="rouge" name="" />
+      <input type="button" value="" id="case3-3" class="case" name="" />
+      <input type="button" value="" id="case3-4" class="case" name="" />
+      <input type="button" value="" id="case3-5" class="case" name="" />
+      <input type="button" value="" id="case3-6" class="case" name="" />
+      <input type="button" value="" id="case3-7" class="case" name="" />
+      <input type="button" value="" id="case3-8" class="case" name="" />
+      <input type="button" value="" id="case3-9" class="case" name="" />
+      <input type="button" value="" id="case3-10" class="case" name="" />
+      <input type="button" value="" id="case3-11" class="case" name="" />
+      <input type="button" value="" id="case3-12" class="case" name="" />
+      <input type="button" value="" id="case3-13" class="case" name="" />
+      <input type="button" value="" id="case3-14" class="case" name="" />
+      <input type="button" value="" id="case3-15" class="case" name="" />
+      <input type="button" value="" id="case3-16" class="case" name="" />
+      <input type="button" value="" id="case3-17" class="case" name="" />
+      <input type="button" value="" id="case3-18" class="case" name="" />
+      <input type="button" value="" id="case3-19" class="case" name="" />
+      <br />
+      <input type="button" value="" id="case4-0" class="rouge" name="" />
+      <input type="button" value="" id="case4-1" class="rouge" name="" />
+      <input type="button" value="" id="case4-2" class="rouge" name="" />
+      <input type="button" value="" id="case4-3" class="case" name="" />
+      <input type="button" value="" id="case4-4" class="case" name="" />
+      <input type="button" value="" id="case4-5" class="case" name="" />
+      <input type="button" value="" id="case4-6" class="case" name="" />
+      <input type="button" value="" id="case4-7" class="case" name="" />
+      <input type="button" value="" id="case4-8" class="case" name="" />
+      <input type="button" value="" id="case4-9" class="case" name="" />
+      <input type="button" value="" id="case4-10" class="case" name="" />
+      <input type="button" value="" id="case4-11" class="case" name="" />
+      <input type="button" value="" id="case4-12" class="case" name="" />
+      <input type="button" value="" id="case4-13" class="case" name="" />
+      <input type="button" value="" id="case4-14" class="case" name="" />
+      <input type="button" value="" id="case4-15" class="case" name="" />
+      <input type="button" value="" id="case4-16" class="case" name="" />
+      <input type="button" value="" id="case4-17" class="case" name="" />
+      <input type="button" value="" id="case4-18" class="case" name="" />
+      <input type="button" value="" id="case4-19" class="case" name="" />
+      <br />
+      <input type="button" value="" id="case5-0" class="case" name="" />
+      <input type="button" value="" id="case5-1" class="case" name="" />
+      <input type="button" value="" id="case5-2" class="case" name="" />
+      <input type="button" value="" id="case5-3" class="case" name="" />
+      <input type="button" value="" id="case5-4" class="case" name="" />
+      <input type="button" value="" id="case5-5" class="case" name="" />
+      <input type="button" value="" id="case5-6" class="case" name="" />
+      <input type="button" value="" id="case5-7" class="case" name="" />
+      <input type="button" value="" id="case5-8" class="case" name="" />
+      <input type="button" value="" id="case5-9" class="case" name="" />
+      <input type="button" value="" id="case5-10" class="case" name="" />
+      <input type="button" value="" id="case5-11" class="case" name="" />
+      <input type="button" value="" id="case5-12" class="case" name="" />
+      <input type="button" value="" id="case5-13" class="case" name="" />
+      <input type="button" value="" id="case5-14" class="case" name="" />
+      <input type="button" value="" id="case5-15" class="case" name="" />
+      <input type="button" value="" id="case5-16" class="case" name="" />
+      <input type="button" value="" id="case5-17" class="case" name="" />
+      <input type="button" value="" id="case5-18" class="case" name="" />
+      <input type="button" value="" id="case5-19" class="case" name="" />
+      <br />
+      <input type="button" value="" id="case6-0" class="case" name="" />
+      <input type="button" value="" id="case6-1" class="case" name="" />
+      <input type="button" value="" id="case6-2" class="case" name="" />
+      <input type="button" value="" id="case6-3" class="case" name="" />
+      <input type="button" value="" id="case6-4" class="case" name="" />
+      <input type="button" value="" id="case6-5" class="case" name="" />
+      <input type="button" value="" id="case6-6" class="case" name="" />
+      <input type="button" value="" id="case6-7" class="case" name="" />
+      <input type="button" value="" id="case6-8" class="case" name="" />
+      <input type="button" value="" id="case6-9" class="case" name="" />
+      <input type="button" value="" id="case6-10" class="case" name="" />
+      <input type="button" value="" id="case6-11" class="case" name="" />
+      <input type="button" value="" id="case6-12" class="case" name="" />
+      <input type="button" value="" id="case6-13" class="case" name="" />
+      <input type="button" value="" id="case6-14" class="case" name="" />
+      <input type="button" value="" id="case6-15" class="case" name="" />
+      <input type="button" value="" id="case6-16" class="case" name="" />
+      <input type="button" value="" id="case6-17" class="case" name="" />
+      <input type="button" value="" id="case6-18" class="case" name="" />
+      <input type="button" value="" id="case6-19" class="case" name="" />
+      <br />
+      <input type="button" value="" id="case7-0" class="case" name="" />
+      <input type="button" value="" id="case7-1" class="case" name="" />
+      <input type="button" value="" id="case7-2" class="case" name="" />
+      <input type="button" value="" id="case7-3" class="case" name="" />
+      <input type="button" value="" id="case7-4" class="case" name="" />
+      <input type="button" value="" id="case7-5" class="case" name="" />
+      <input type="button" value="" id="case7-6" class="case" name="" />
+      <input type="button" value="" id="case7-7" class="case" name="" />
+      <input type="button" value="" id="case7-8" class="case" name="" />
+      <input type="button" value="" id="case7-9" class="case" name="" />
+      <input type="button" value="" id="case7-10" class="case" name="" />
+      <input type="button" value="" id="case7-11" class="case" name="" />
+      <input type="button" value="" id="case7-12" class="case" name="" />
+      <input type="button" value="" id="case7-13" class="case" name="" />
+      <input type="button" value="" id="case7-14" class="case" name="" />
+      <input type="button" value="" id="case7-15" class="case" name="" />
+      <input type="button" value="" id="case7-16" class="case" name="" />
+      <input type="button" value="" id="case7-17" class="case" name="" />
+      <input type="button" value="" id="case7-18" class="case" name="" />
+      <input type="button" value="" id="case7-19" class="case" name="" />
+      <br />
+      <br />
+      <div id="scoreboard"></div>
+      <div id="drapeau"></div>
+      <div id="BoutonDirection">
+        <table>
+          <tr>
+            <td id="Nord-Ouest" class="direction"></td>
+            <td id="Nord" class="direction"></td>
+            <td id="Nord-Est" class="direction"></td>
+          </tr>
+          <tr>
+            <td id="Ouest" class="direction"></td>
+            <td id="Centre" class="direction"></td>
+            <td id="Est" class="direction"></td>
+          </tr>
+          <tr>
+            <td id="Sud-Ouest" class="direction"></td>
+            <td id="Sud" class="direction"></td>
+            <td id="Sud-Est"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
