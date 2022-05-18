@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  text-align: center;
+  min-height: 100vh;
+  background: url("./media/pictogram-gdfb6abcb5_1280.jpg");
+}
+h2 {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  color: rgb(255, 166, 0);
+  font-size: 2rem;
+  text-shadow: 3px 1px 1px beige;
+}
+h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:bisque;
+}
+h3{
+  color:beige;
+}
+img{
+  width: 70px;
+  height: 110px;
+}
+#start {
+  width: 100px;
+  margin-top: 20px;
+}
+body #start:active {
+  animation: shadow-back 0.1s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+body #start:hover {
+  box-shadow: 1px 1px 1px #333, inset 0 0 0 40px #ffa928c5;
+  color: black;
+  background: rgba(250, 136, 43, 0.966);
+  cursor: pointer;
+}
+
+#grilles {
+  margin-top: 50px;
+}
+#grilles input {
+  width: 37px;
+  height: 37px;
+  font-size: 12pt;
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+  border: solid 1px #aaa;
+  color: beige;
+  display: inline-block;
+  margin: 4px 2px;
+  transition: all 0.3s ease;
+}
+#grilles input:hover {
+  transform: scale(1.2);
+  color: #000;
+  background-color: rgb(255, 136, 43, 0.966);
+  transition: all 0.3s ease;
+}
+table{
+  position: absolute;
+  top: 318px; 
+  left: 80px;
+  ;
+
+}
+td input{
+
+width: 25px;
+height: 25px;
+font-size: 12pt;
+font-weight: bold;
+cursor: pointer;
+
+}
+td input:hover{
+  transform: scale(1.2);
+  color: #000;
+  background-color: rgb(255, 136, 43, 0.966);
+  transition: all 0.3s ease;
+}
